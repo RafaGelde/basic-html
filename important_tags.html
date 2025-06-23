@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .img-in-text {
+            width: 50px;
+            height: 44px;
+        }
+
+        .vermelho {
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tags inline/block</h1>
+
+    <p>
+        <b>Lorem</b> <strong>ipsum</strong> dolor sit amet 
+        <!-- 
+            <b> deixa o texto em negrito apenas visualmente (sem valor semântico).
+            <strong> também deixa em negrito, mas indica que o conteúdo é importante.
+        -->
+
+        <i>consectetur</i> <em>adipisicing</em>
+        <!-- 
+            <i> coloca o texto em itálico apenas visualmente.
+            <em> também coloca em itálico, mas indica ênfase semântica no conteúdo.
+        -->
+
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">elit.</a>
+        <!-- 
+            <a> cria um hiperlink clicável.
+            O atributo href define o destino do link.
+            O atributo target="_blank" faz com que o link seja aberto em uma nova aba.
+        -->
+
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <img class="img-in-text" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNH8wbNEL0nHOvDU3hmn-TLUY3cMDcXXrhuclfWJ5Pa719e-yFRfkCyIbr4ILkgYX2R4c&usqp=CAU" alt="logo da MSN dinossauro">
+        </a>
+        <!-- 
+            <img> insere uma imagem na página.
+            O atributo src define o endereço da imagem.
+            O atributo alt descreve a imagem para acessibilidade e SEO.
+        -->
+
+        <del>Vermelho</del> <ins>Azul</ins>
+        <!-- 
+            <del> representa texto que foi removido (riscado) — usado para correções ou versões antigas.
+            <ins> representa texto que foi inserido — geralmente usado junto com <del>.
+        -->
+
+        <s>Sapiente</s> <u>nulla</u> 
+        <!-- 
+            <s> risca o texto apenas visualmente, sem significado semântico.
+            <u> sublinha o texto apenas visualmente, também sem semântica.
+        -->
+
+        nisi 2<sup>2</sup> H<sub>2</sub>O
+        <!-- 
+            <sup> exibe o texto como sobrescrito (elevado).
+            <sub> exibe o texto como subscrito (abaixo da linha base).
+        -->
+
+        <q cite="https://developer.mozilla.org/en-US/blog/javascript-temporal-is-coming/">
+            Applications that rely on scheduling, internationalization, 
+            or time-sensitive data will be able to use built-ins for efficient
+        </q> 
+        <!-- 
+            <q> representa uma citação curta e é exibida entre aspas.
+            O atributo cite indica a fonte da citação.
+        -->
+    </p>
+
+    <hr>
+    <!-- 
+        <hr> insere uma linha horizontal.
+        É usada para separar conteúdos ou seções na página.
+    -->
+
+    <p>
+        <code>console.log</code>
+        <!-- 
+            <code> representa um trecho de código, usando fonte monoespaçada.
+        -->
+
+        vero quos saepe vel corporis 
+
+        <span class="vermelho">alias</span> fugit neque. Ducimus
+        <!-- 
+            <span> é um container genérico inline, usado para aplicar estilos em partes específicas do texto.
+            Aqui ele aplica a classe "vermelho".
+        -->
+
+        iure numquam perspiciatis voluptates 
+
+        <span class="vermelho">in nesciunt dicta dolor nemo?</span>
+    </p>
+
+    <pre>
+        <code>
+            let soma = 0;
+
+            inputsMais.foreEach((input) =>{
+                const valor = input.value;
+                const numero = Number(valor);
+
+                if (numero) {
+                    soma += numero;
+
+                    console.log(soma);
+                }
+            });
+        </code>
+    </pre>
+    <!-- 
+        <pre> mantém a formatação do texto exatamente como escrito (quebra de linha, espaços).
+        É muito útil para mostrar trechos de código com <code>.
+    -->
+
+    <blockquote cite="https://developer.mozilla.org/en-US/blog/javascript-temporal-is-coming/">
+        <p>aqui sim estou fazendo um bloco de citação</p>
+    </blockquote>
+    <!-- 
+        <blockquote> representa uma citação em bloco (geralmente longa).
+        Pode conter outros elementos dentro, como <p>.
+        O atributo cite indica a fonte da citação.
+    -->
+
+    <div class="vermelho">
+        Eu sou um Bloco
+    </div>
+    <!-- 
+        <div> é um container genérico de bloco (block-level).
+        Usado para agrupar elementos e aplicar estilos ou scripts.
+        Não possui valor semântico.
+    -->
+
+</body>
+</html>
